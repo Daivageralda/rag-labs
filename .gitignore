@@ -1,0 +1,22 @@
+# Secrets — never commit these
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# App data
+receipts/
+sessions/
+
+# Scratch files
+cek.py
+check.py
+*.bak
+temp_*
