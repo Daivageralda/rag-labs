@@ -278,14 +278,6 @@ User cukup kirim foto struk/nota ke nomor WhatsApp bot. Sistem akan otomatis:
 | Pengetahuan web | ChromaDB (`source=web`) | Shared semua user |
 | Chat history | In-memory (5 turn terakhir) | Per user, reset saat restart |
 
----
-
-## Catatan Keamanan
-
-- Jangan commit `.env` — sudah ada di `.gitignore`
-- Semua API key ada di `.env`, tidak ada hardcode di kode
-- Data struk (receipt) di ChromaDB selalu difilter per `user_id` — tidak bisa bocor ke user lain
-- Query tentang orang tidak disimpan ke ChromaDB untuk menghindari kontaminasi data
 
 ---
 
